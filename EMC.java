@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.lang.Math;
 
 /**
-* This is a program that calculate E=mc**2
+* This is a program that calculate E=mc^2
 */
 final class EMC {
 
@@ -43,18 +43,27 @@ final class EMC {
 
         final Scanner userInput = new Scanner(System.in);
 
-        // ask the user to input the mass of their object
-        System.out.print("Enter the mass of your object (kg): ");
+	// Block of code to try
+	try {
+        	// ask the user to input the mass of their object
+        	System.out.print("Enter the mass of your object (kg): ");
 
-        // Stores float in length
-        final float mass = userInput.nextFloat();
+        	// Stores float in mass
+        	final float mass = userInput.nextFloat();
 
-        // calculate how much energy is released
-        energyReleased = SPEED_OF_LIGHT * mass;
+        	// calculate how much energy is released
+        	energyReleased = SPEED_OF_LIGHT * mass;
 
-        // Outputs how much energy is released
-        System.out.println("You will release "
-                + energyReleased + " joules.");
+        	// Outputs how much energy is released
+        	System.out.println("\nYou will release "
+                	+ energyReleased + " joules.");
+	}
+
+	// Block of code to handle errors
+	catch(Exception e) {
+
+		System.out.println("\nYou have not entered a valid input.");
+	}
 
         System.out.println("\nDone.");
     }
