@@ -56,9 +56,7 @@ final class EMC {
                 // Outputs how much energy is released
                 System.out.println("\nYou will release "
                         + energyReleased + " joules.");
-                // Test
         }
-
         // Block of code to handle errors
         catch (Exception e) {
 
