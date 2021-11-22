@@ -51,12 +51,13 @@ final class EMC {
                 final float mass = userInput.nextFloat();
 
                 // calculate how much energy is released
-                energyReleased = SPEED_OF_LIGHT * mass;
+                energyReleased = (SPEED_OF_LIGHT * SPEED_OF_LIGHT) * mass;
 
                 // Outputs how much energy is released
                 System.out.println("\nYou will release "
                         + energyReleased + " joules.");
         }
+
         // Block of code to handle errors
         catch (Exception e) {
 
