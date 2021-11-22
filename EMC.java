@@ -42,7 +42,7 @@ final class EMC {
 
         final Scanner userInput = new Scanner(System.in);
 
-	// Block of code to try
+        // Block of code to try
         try {
                 // ask the user to input the mass of their object
                 System.out.print("Enter the mass of your object (kg): ");
@@ -56,6 +56,7 @@ final class EMC {
                 // Outputs how much energy is released
                 System.out.println("\nYou will release "
                         + energyReleased + " joules.");
+                // Test
         }
 
         // Block of code to handle errors
