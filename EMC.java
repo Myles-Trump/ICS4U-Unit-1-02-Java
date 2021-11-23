@@ -59,7 +59,7 @@ final class EMC {
         }
 
         // Block of code to handle errors
-        catch (Exception e) {
+        catch (java.util.InputMismatchException errorCode) {
 
                 System.out.println("\nYou have not entered a valid input.");
         }
