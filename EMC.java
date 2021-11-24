@@ -56,8 +56,7 @@ final class EMC {
                 // Outputs how much energy is released
                 System.out.println("\nYou will release "
                         + energyReleased + " joules.");
-        } 
-        catch (java.util.InputMismatchException errorCode) {
+        } catch (java.util.InputMismatchException errorCode) {
         // Block of code to handle errors
                 System.out.println("\nYou have not entered a valid input.");
         }
